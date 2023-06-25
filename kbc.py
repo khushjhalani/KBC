@@ -74,7 +74,7 @@ def get_user_input(tl=60):
 def l1():
     global winnings
     for i in range(1,6):
-        print(f"Question {i} is ")
+        print(f"\nQuestion {i} is ")
         print(f"{easy_questions[i][0]}")
         print(f"Your options are:")
         for val in range(4):
@@ -103,7 +103,7 @@ def l1():
 def l2():
     global winnings
     for i in range(1,6):
-        print(f"Question {i+5} is: ")
+        print(f"\nQuestion {i+5} is: ")
         print(f"{medium_questions[i][0]}")
         print(f"Your options are:")
         for val in range(4):
@@ -128,7 +128,7 @@ def l2():
 def l3():
     global winnings
     for i in range(1,6):
-        print(f"Question {i+10} is: ")
+        print(f"\nQuestion {i+10} is: ")
         print(f"{hard_questions[i][0]}")
         print(f"Your options are:")
         for val in range(4):
@@ -159,8 +159,8 @@ def playGame():
     
     a = l1()
     if a==True:
-        print("Congrats!! You cleared level 1 and your checkpoint 1 is now set.\nTimer is now removed and there is no time limit")
-        print("Let's start level 2\n")
+        print("\n\nCongrats!! You cleared level 1 and your checkpoint 1 is now set.\nTimer is now removed and there is no time limit")
+        print("Let's start level 2")
     elif a=='tle' or a=='lost':
         print(f"You failed to give correct answer on time and thus have not won any amount.")
         winnings = 0
